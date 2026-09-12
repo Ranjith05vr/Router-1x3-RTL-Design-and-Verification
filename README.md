@@ -343,7 +343,7 @@ The UVM verification environment was evaluated using Questa coverage analysis. T
 </p>
 
 <p align="center">
-  <b>Figure 2: Functional and Assertion Coverage Results</b>
+  <b>Figure: Functional and Assertion Coverage Results</b>
 </p>
 
 ## Requirements
