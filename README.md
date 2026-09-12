@@ -508,27 +508,13 @@ A typical transaction proceeds as follows:
 11. Functional coverage is sampled for the observed transactions.
 12. Questa saves the coverage database when the test exits.
 
----
 
-## Current Verification Status of Included Artifacts
-
-Based on the supplied logs:
-
-| Log | UVM warnings | UVM errors | UVM fatals | Result |
-|---|---:|---:|---:|---|
-| `test1.log` | 0 | 0 | 0 | Pass according to UVM summary |
-| `test2.log` | 0 | 0 | 0 | Pass according to UVM summary |
-| `test3.log` | 0 | 0 | 0 | Pass according to UVM summary |
-| `test4.log` | 0 | 0 | 0 | Pass according to UVM summary |
-| `test5.log` | 0 | 3 | 0 | Scoreboard mismatch observed |
-
-The failure in `test5.log` occurs during the large-packet/large-delay scenario and reports mismatches in the header, payload, and parity. The log should be examined together with the waveform before claiming full functional closure.
 
 ---
 
 ## Notes and Potential Improvements
 
-The current project is a solid UVM learning/verification implementation, but several areas could be strengthened for a production-quality verification environment:
+  Several areas could be strengthened for a production-quality verification environment:
 
 - Investigate the `large_test` failure observed in `test5.log`.
 - Improve scoreboard transaction matching so that multiple outstanding transactions can be handled robustly rather than relying on the first destination FIFO that returns data.
