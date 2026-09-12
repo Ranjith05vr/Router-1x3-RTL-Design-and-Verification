@@ -536,7 +536,6 @@ A typical transaction proceeds as follows:
 
   Several areas could be strengthened for a production-quality verification environment:
 
-- Investigate the `large_test` failure observed in `test5.log`.
 - Improve scoreboard transaction matching so that multiple outstanding transactions can be handled robustly rather than relying on the first destination FIFO that returns data.
 - Add explicit assertions for protocol rules such as packet-valid timing, FIFO overflow/underflow prevention, and destination routing.
 - Add coverage crosses between destination address, packet length, delay class, and error/parity conditions.
