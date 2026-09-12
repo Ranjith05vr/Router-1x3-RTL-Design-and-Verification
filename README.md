@@ -326,6 +326,26 @@ The `sim/work`, `covhtmlreport`, coverage databases, simulator logs, and wavefor
 
 ---
 
+## Coverage Results
+
+The UVM verification environment was evaluated using Questa coverage analysis. The reported results are:
+
+| Coverage Metric | Result |
+|---|---:|
+| Instance Coverage | **97.22%** |
+| Design Units Coverage | **97.22%** |
+| Assertions | **100%** |
+| Covergroups | **94.44%** |
+| Covergroup Bins | **92.85%** |
+
+<p align="center">
+  <img src="images/Coverage_report.png" alt="Questa Coverage Results" width="900">
+</p>
+
+<p align="center">
+  <b>Figure 2: Functional and Assertion Coverage Results</b>
+</p>
+
 ## Requirements
 
 The Makefile is configured primarily for:
